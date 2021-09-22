@@ -1,0 +1,91 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__top, .header__hero {
+  width: 85%;
+  margin: auto;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.4rem 0;
+}
+
+.header__hero {
+  margin-top: 100px;
+  border: 2px solid currentColor;
+  color: white;
+}
+
+.header__hero h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header .burger {
+  cursor: pointer;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.intro p {
+  text-align: center;
+  color: #8c8c8c;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.main {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.main img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.intro{
+    h2{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: $light;
+        color: $clr-dark-gray;
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    p{
+        text-align: center;
+        color: $clr-dark-gray;
+        font-weight: $semibold;
+        margin-bottom: 1em;
+    }
+}
