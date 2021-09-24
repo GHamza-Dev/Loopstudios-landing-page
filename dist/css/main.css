@@ -64,6 +64,63 @@ body {
   cursor: pointer;
 }
 
+.main {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main .see__all__btn {
+  text-align: center;
+  margin: 2rem 0;
+  margin-bottom: 50rem;
+}
+
+.main .see__all__btn a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 1em 3em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.main .see__all__btn a::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.main .see__all__btn a:hover {
+  color: white;
+}
+
+.main .see__all__btn a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 .intro h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -80,12 +137,39 @@ body {
   margin-bottom: 1em;
 }
 
-.main {
-  width: 80%;
-  margin: 80px auto;
+.creations h2 {
+  text-align: center;
+  padding: 1em 0;
 }
 
-.main img {
-  width: 100%;
+.creation {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.creation__title {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  text-transform: uppercase;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 1.5;
+}
+
+.creation__image {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.creation__image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */

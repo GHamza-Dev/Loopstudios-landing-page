@@ -1,0 +1,30 @@
+.creations{
+    h2{
+        text-align: center;
+        padding: 1em 0;
+    }
+}
+
+.creation{
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
+    
+    &__title{
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: $clr-white;
+        text-transform: uppercase;
+        width: min-content;
+        line-height: 1.5;
+    }
+
+    &__image{
+        cursor: pointer;
+        transition: transform .5s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
