@@ -38,3 +38,15 @@
     }
 }
 
+@mixin medium{
+    @media screen and (min-width:671px)  {
+        @content;
+    }
+}
+
+@mixin large{
+    @media screen and (min-width:800px)  {
+        @content;
+    }
+} 
+
