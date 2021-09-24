@@ -95,7 +95,6 @@ h1, h2, h3 {
 .main .see__all__btn {
   text-align: center;
   margin: 2rem 0;
-  margin-bottom: 50rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -237,7 +236,6 @@ h1, h2, h3 {
 }
 
 .creation picture {
-  border: red solid 1px;
   overflow: hidden;
 }
 
