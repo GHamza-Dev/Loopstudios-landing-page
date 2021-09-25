@@ -29,7 +29,6 @@ h1, h2, h3 {
 
 .header {
   height: 100vh;
-  background-color: #3C183D;
   background-image: url("../../dist/images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
