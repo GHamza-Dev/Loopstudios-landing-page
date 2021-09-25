@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 .header {
   height: 100vh;
-  background-image: url("../../dist/images/mobile/image-hero.jpg");
+  background-image: url("/dist/images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
 }
