@@ -154,7 +154,7 @@ h1, h2, h3 {
     margin: 0;
   }
   .header .navigation__bar li {
-    margin: 0 .8rem;
+    margin: 0 1rem;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     border-bottom: 1px solid transparent;
@@ -165,14 +165,16 @@ h1, h2, h3 {
   .header .navigation__bar li:hover a {
     color: #da8ece;
   }
-  .header .navigation__bar li:nth-child(1) {
+  .header .navigation__bar li:last-child {
     margin: 0;
   }
   .header .navigation__bar a {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     font-family: "Josefin Sans", sans-serif;
     text-transform: lowercase;
+    text-transform: capitalize;
   }
 }
 
