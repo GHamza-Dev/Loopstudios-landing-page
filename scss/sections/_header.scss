@@ -37,7 +37,97 @@
 
     }
 
+    &__logo,
     .burger{
         cursor: pointer;
+        z-index: 9;
+    }
+
+    .navigation__bar{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $clr-black;
+        @include flex-c(null,center);
+        transition: all .7s cubic-bezier(0.56,-0.01, 0.14, 0.99);
+        
+        &.show{
+            // clip-path: circle(150% at right top);
+            transform: translateX(0);
+        }
+        &.hide{
+            // clip-path: circle(0px at right top);
+            transform: translateX(100%);
+        }
+        
+        ul{
+            width: $width;
+            margin: auto;
+        }
+
+        li{
+            margin: 2rem 0;
+        }
+
+        a{
+            color: $clr-dark-gray;
+            font-size: 1.8rem;
+            font-family: $f-Josefin-Sans;
+            text-transform: uppercase;
+        }
     }
 }
+
+@include large{
+    .header{
+
+        .burger{
+            display: none;
+        }
+
+        .navigation__bar{
+            position: static;
+            align-items: flex-end;
+            background-color: transparent;
+
+            
+            &.hide{
+                transform: translateX(0);
+            }
+            
+            ul{
+                width: auto;
+                display: flex;
+                margin: 0;
+            }
+
+            li{
+                margin: 0 .8rem;
+                transition: all .5s ease;
+                border-bottom: 1px solid transparent;
+
+                &:hover{
+                    // transform: scale(1.2);
+                    border-bottom: 1px solid #9A2D8A;
+                    a{
+                        color: #da8ece;
+                    }
+                }
+            }
+
+            li:nth-child(1){
+                margin: 0;
+            }
+
+            a{
+                color: $clr-white;
+                font-size: 1.4rem;
+                font-family: $f-Josefin-Sans;
+                text-transform: lowercase;
+            }
+        }    
+    }       
+}
+

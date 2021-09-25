@@ -78,8 +78,102 @@ h1, h2, h3 {
   }
 }
 
+.header__logo,
 .header .burger {
   cursor: pointer;
+  z-index: 9;
+}
+
+.header .navigation__bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.7s cubic-bezier(0.56, -0.01, 0.14, 0.99);
+  transition: all 0.7s cubic-bezier(0.56, -0.01, 0.14, 0.99);
+}
+
+.header .navigation__bar.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header .navigation__bar.hide {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.header .navigation__bar ul {
+  width: 85%;
+  margin: auto;
+}
+
+.header .navigation__bar li {
+  margin: 2rem 0;
+}
+
+.header .navigation__bar a {
+  color: #8c8c8c;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  .header .burger {
+    display: none;
+  }
+  .header .navigation__bar {
+    position: static;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: transparent;
+  }
+  .header .navigation__bar.hide {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .header .navigation__bar ul {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .header .navigation__bar li {
+    margin: 0 .8rem;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .header .navigation__bar li:hover {
+    border-bottom: 1px solid #9A2D8A;
+  }
+  .header .navigation__bar li:hover a {
+    color: #da8ece;
+  }
+  .header .navigation__bar li:nth-child(1) {
+    margin: 0;
+  }
+  .header .navigation__bar a {
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: lowercase;
+  }
 }
 
 .main {
