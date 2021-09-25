@@ -34,6 +34,12 @@ h1, h2, h3 {
   background-size: cover;
 }
 
+@media screen and (min-width: 800px) {
+  .header {
+    background-image: url("/dist/images/desktop/image-hero.jpg");
+  }
+}
+
 .header__top, .header__hero {
   width: 85%;
   max-width: 52.85rem;

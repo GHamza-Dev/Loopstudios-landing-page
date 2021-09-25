@@ -5,6 +5,9 @@
     background-image: url('/dist/images/mobile/image-hero.jpg');
     background-position: center;
     background-size: cover;
+    @include large{
+         background-image: url('/dist/images/desktop/image-hero.jpg');
+    }
     
     &__top,
     &__hero{
