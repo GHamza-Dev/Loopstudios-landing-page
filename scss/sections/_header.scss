@@ -21,6 +21,13 @@
     &__hero{
         color: $clr-white;
         margin-top: 2rem;
+        @include medium{
+            margin-top: 5rem;
+        }
+        
+        @include large{
+            margin-top: 6rem;
+        }
         
         h1{
             width: 100%;
@@ -29,9 +36,10 @@
             font-size: 2.5rem;
             font-weight: $light;
             text-transform: uppercase;
-            padding: .69em;
+            padding: .5em;
             @include medium{
                 font-size: 3rem;
+                max-width: 400px;   
             }
         }
 
