@@ -30,14 +30,14 @@ h1, h2, h3 {
 .header {
   height: 100vh;
   background-color: #83236B;
-  background-image: url("/dist/images/mobile/image-hero.jpg");
+  background-image: url("../images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
 }
 
 @media screen and (min-width: 800px) {
   .header {
-    background-image: url("/dist/images/desktop/image-hero.jpg");
+    background-image: url("../images/desktop/image-hero.jpg");
   }
 }
 
